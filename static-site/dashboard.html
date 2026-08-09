@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head><link rel="icon" type="image/x-icon" href="img/du.svg.webp">
+<script>
+
+if (sessionStorage.getItem("demoLoggedIn") !== "true") {
+    window.location.href = "login.html";
+}
+</script>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>University of Delhi</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/site.css" rel="stylesheet">
+<link href="css/juiprint.css" rel="stylesheet">
+</head>
+<body>
+ 
+
+
+<nav id="topNav" class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="dashboard.html"            ><img id="jui-app-logo" class="img-responsive"
+                  src="img/du-logo.png"
+                  alt="du logo"/></a>
+        </div>
+
+        <ul class="nav navbar-nav">
+            <li class="nav-item">
+                 <a href="https://www.du.ac.in/uploads/2026/06012026_BOI_UG_2026_27_compressed.pdf" target="_blank">
+                     <span class="text-bold">Undergraduate Admissions <br/>
+                             <small>Common Seat Allocation System 2026 </small>
+                     </span>
+                 </a>
+             </li>            <li class="nav-item text-bold dropdown visible-xs-inline">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                   aria-expanded="false">Helpdesk <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" data-original-route="/index.php/site/helpline" onclick="alert('Demo stub — original route: /index.php/site/helpline'); return false;">Helpline</a></li>
+                </ul>
+            </li>
+                    </ul>
+        <ul class="nav navbar-nav navbar-right">
+                            <li class="nav-item">
+                    <a href="#">
+                        <strong>CUET APPLICATION NUMBER : 263510799682</strong>
+                    </a>
+                </li>
+                    </ul>
+    </div>
+</nav>
+
+<nav id="mainNav" class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#mainNav-navitems" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="mainNav-navitems">
+            <ul class="nav navbar-nav">
+  <li class="text-bold">
+    <a href="dashboard.html">Home</a>
+  </li>
+  <li>
+    <a href="https://www.du.ac.in/uploads/2026/06012026_BOI_UG_2026_27_compressed.pdf" target="_blank">UG Bulletin of Information</a>
+  </li>
+  <li>
+    <a href="https://admission.uod.ac.in/userfiles/downloads/UG-CSAS_26062026.pdf" target="_blank">CSAS(UG)-2026</a>
+  </li>
+  <li>
+    <a href="https://admission.uod.ac.in" target="_blank">Admission Website</a>
+  </li>
+</ul>
+            <ul class="nav navbar-nav navbar-right">
+
+                <li class="text-bold dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">
+                        Helpdesk <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+
+                        <li><<a href="https://ugadmission.uod.ac.in/index.php/site/helpline">Helpline</a></li>
+                    </ul>
+                </li>
+                                <li>
+                    <a href="change-password.html" class="text-bold">Change Password</a>
+                </li>
+                <li>
+                    <a href="#" onclick="sessionStorage.removeItem('demoLoggedIn'); window.location.href='login.html'; return false;">
+                        <span class="btn btn-sm btn-warning text-bold">LOGOUT</span>
+                    </a>
+                </li>
+            </ul>
+            </li>
+
+                                </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div id="du-page-wrapper">
+        
+<nav class="navbar navbar">
+    <div class="container-fluid">
+        <ul class="nav navbar-nav">
+            <li>
+               <a href="registration-print.html">Application Phase
+                    1</a></li>
+            <li><a href="preview.html">Application Phase 2</a></li>
+            <li><a href="admission-process.html">My Seat Allocation</a></li>
+            <li><a href="query.html">Queries</a></li>
+            <li><a href="bank-details.html">Bank Detail</a></li>
+            <li><a href="transaction.html">Transactions</a></li>
+            <li><a>Grievance Email: uggrievance@admission.du.ac.in</a></li>
+                                            </ul>
+    </div>
+</nav>
+<div> </div>
+
+
+
+<div class="card">
+                    <div class="panel panel-danger">
+            <div class="panel-heading">
+                <h2>Active Allocations: Mid-Entry Round Allocations</h2>
+                <p>
+                    Please click the button below to view seat allocation status and actions required.
+                </p>
+                <p>
+                    <a class="btn btn-lg btn-rounded btn-danger" href="admission-process.html">View</a> </p>
+            </div>
+        </div>
+        
+
+    
+    
+
+        
+    
+        <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const el = document.getElementById('lastUpdated');
+        if (el) {
+            const utcString = el.getAttribute('data-utc'); // e.g. "2025-08-09 12:34:56"
+            const utcDate = new Date(utcString + " UTC"); // ensure it's parsed as UTC
+            el.textContent = "Preferences last updated at " + utcDate.toLocaleString();
+        }
+    });
+</script>
+</div>
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">&copy;<a href="http://www.du.ac.in/" target="_blank"> University of
+                    Delhi 2026</a>
+            </div>
+            <div class="col-md-6 control-label"><span class=" pull-right no-print"><a href="https://samarth.edu.in/"
+                                                                                      class="print">Powered By: Samarth</a></span>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery.js"></script>
+<script src="js/yii.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/ji_form.js"></script></body>
+</html>

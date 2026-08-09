@@ -1,0 +1,185 @@
+<html lang="en-US"><head><link rel="icon" type="image/x-icon" href="img/du.svg.webp">
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>DU Transaction History — Practice Copy</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/site.css" rel="stylesheet">
+<link href="css/juiprint.css" rel="stylesheet">
+<script>
+if (sessionStorage.getItem("demoLoggedIn") !== "true") {
+    window.location.href = "login.html";
+}
+</script>
+</head>
+<body>
+
+
+<nav id="topNav" class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#" onclick="return false;"><img id="jui-app-logo" class="img-responsive" src="img/du-logo.png" alt="du logo"></a>
+        </div>
+
+        <ul class="nav navbar-nav">
+            <li class="nav-item">
+                 <a href="https://www.du.ac.in/uploads/2026/06012026_BOI_UG_2026_27_compressed.pdf" target="_blank">
+                     <span class="text-bold">Undergraduate Admissions <br>
+                             <small>Common Seat Allocation System 2026 </small>
+                     </span>
+                 </a>
+             </li>            <li class="nav-item text-bold dropdown visible-xs-inline">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Helpdesk <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" onclick="alert('Demo stub'); return false;">Helpline</a></li>
+                </ul>
+            </li>
+                    </ul>
+        <ul class="nav navbar-nav navbar-right">
+                            <li class="nav-item">
+                    <a href="#">
+                        <strong>CUET APPLICATION NUMBER : 263510799682</strong>
+                    </a>
+                </li>
+                    </ul>
+    </div>
+</nav>
+
+<nav id="mainNav" class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNav-navitems" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="mainNav-navitems">
+            <ul class="nav navbar-nav">
+  <li class="text-bold">
+    <a href="dashboard.html">Home</a>
+  </li>
+  <li>
+    <a href="https://www.du.ac.in/uploads/2026/06012026_BOI_UG_2026_27_compressed.pdf" target="_blank">UG Bulletin of Information</a>
+  </li>
+  <li>
+    <a href="https://admission.uod.ac.in/userfiles/downloads/UG-CSAS_26062026.pdf" target="_blank">CSAS(UG)-2026</a>
+  </li>
+  <li>
+    <a href="https://admission.uod.ac.in" target="_blank">Admission Website</a>
+  </li>
+</ul>
+            <ul class="nav navbar-nav navbar-right">
+
+                <li class="text-bold dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Helpdesk <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+
+                        <li><<a href="https://ugadmission.uod.ac.in/index.php/site/helpline">Helpline</a></li>
+                    </ul>
+                </li>
+                                <li>
+                    <a href="change-password.html" class="text-bold">Change Password</a>
+                </li>
+                <li>
+                    <a href="#" onclick="sessionStorage.removeItem('demoLoggedIn'); window.location.href='login.html'; return false;">
+                        <span class="btn btn-sm btn-warning text-bold">LOGOUT</span>
+                    </a>
+                </li>
+            </ul>
+            
+
+                                
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div id="du-page-wrapper">
+        <div class="row container-fluid">
+    <div class="col-md-12">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <div class="panel-title">
+                    Payment Transaction History
+                </div>
+            </div>
+            <div class="panel-body" style="overflow-x: auto">
+                <div class="col-md-pull-1">
+                     <div>
+                        <ul>
+                            <li>Use this section to check your payment status.</li>
+                            <li>In case your payment is not updated click on check payment button to check payment status.
+                            </li>
+                            <li>In case of successful payment on check payment status only your total balance will be updated. To complete the admission process go to the My Seat Allocation section and click on Pay Fee button to confirm your admission according to the CSAS Round schedule.
+                            </li>
+                        </ul>
+                    </div>
+                    <table class="table table-condensed table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th>
+                                #
+                            </th>
+                            <th>
+                                Transaction Tracking ID
+                            </th>
+                            <th>
+                                Type/ Transaction Initiated On
+                            </th>
+                            <th>
+                                Status
+                            </th>
+                            <th>
+                                PG Transaction Number / Transaction Successful Date / Update Date
+                            </th>
+                            <th>Amount Paid (INR)
+                            </th>
+                            <th>
+                                Action
+                            </th>
+                        </tr>
+                        </thead>
+                                                        <tbody><tr>
+                                    <td>
+                                        1                                    </td>
+                                    <td>
+                                        111502                                    </td>
+                                    <td>
+                                        ADMPROFILE / Jun 30, 2026 4:06:49 PM                                    </td>
+                                    <td>
+                                        <p style="background: green;color:white;font-weight: bold;text-align: center">Success</p>                                    </td>
+                                    <td>
+                                        260630276299692/ 2026-06-30 16:06:23                                    </td>
+                                    <td>
+                                        250.00                                    </td>
+                                    <td>
+                                                                            </td>
+                                </tr>
+                                                               
+                                                    </tbody></table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div>
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">©<a href="http://www.du.ac.in/" target="_blank"> University of
+                    Delhi 2026</a>
+            </div>
+            <div class="col-md-6 control-label"><span class=" pull-right no-print"><a href="https://samarth.edu.in/" class="print">Powered By: Samarth</a></span>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery.js"></script>
+<script src="js/yii.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/ji_form.js"></script>
+
+</body></html>
