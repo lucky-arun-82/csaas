@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head><link rel="icon" type="image/x-icon" href="img/du.svg.webp">
+<script>
+// DEMO GATE: bounce back to login.html unless the demo login succeeded this session
+if (sessionStorage.getItem("demoLoggedIn") !== "true") {
+    window.location.href = "login.html";
+}
+</script>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Seat Allocation Detail — Practice Copy</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/site.css" rel="stylesheet">
+<link href="css/juiprint.css" rel="stylesheet">
+</head>
+<body>
+
+
+<nav id="topNav" class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="dashboard.html"            ><img id="jui-app-logo" class="img-responsive"
+                  src="img/du-logo.png"
+                  alt="Demo logo — practice clone"/></a>
+        </div>
+
+        <ul class="nav navbar-nav">
+            <li class="nav-item">
+                 <a href="https://www.du.ac.in/uploads/2026/06012026_BOI_UG_2026_27_compressed.pdf" target="_blank">
+                     <span class="text-bold">Undergraduate Admissions <br/>
+                             <small>Common Seat Allocation System 2026 </small>
+                     </span>
+                 </a>
+             </li>            <li class="nav-item text-bold dropdown visible-xs-inline">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                   aria-expanded="false">Helpdesk <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" data-original-route="/index.php/site/helpline" onclick="alert('Demo stub — original route: /index.php/site/helpline'); return false;">Helpline</a></li>
+                </ul>
+            </li>
+                    </ul>
+        <ul class="nav navbar-nav navbar-right">
+                            <li class="nav-item">
+                    <a href="#">
+                        <strong>CUET APPLICATION NUMBER : 100000000002</strong>
+                    </a>
+                </li>
+                    </ul>
+    </div>
+</nav>
+
+<nav id="mainNav" class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#mainNav-navitems" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="mainNav-navitems">
+            <ul class="nav navbar-nav">
+  <li class="text-bold">
+    <a href="dashboard.html">Home</a>
+  </li>
+  <li>
+    <a href="https://www.du.ac.in/uploads/2026/06012026_BOI_UG_2026_27_compressed.pdf" target="_blank">UG Bulletin of Information</a>
+  </li>
+  <li>
+    <a href="https://admission.uod.ac.in/userfiles/downloads/UG-CSAS_26062026.pdf" target="_blank">CSAS(UG)-2026</a>
+  </li>
+  <li>
+    <a href="https://admission.uod.ac.in" target="_blank">Admission Website</a>
+  </li>
+</ul>
+            <ul class="nav navbar-nav navbar-right">
+
+                <li class="text-bold dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">
+                        Helpdesk <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+
+                        <li><<a href="https://ugadmission.uod.ac.in/index.php/site/helpline">Helpline</a></li>
+                    </ul>
+                </li>
+                                <li>
+                    <a href="change-password.html" class="text-bold">Change Password</a>
+                </li>
+                <li>
+                    <a href="#" onclick="sessionStorage.removeItem('demoLoggedIn'); window.location.href='login.html'; return false;">
+                        <span class="btn btn-sm btn-warning text-bold">LOGOUT</span>
+                    </a>
+                </li>
+            </ul>
+            </li>
+
+                                </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div id="du-page-wrapper">
+        <br/>
+
+
+<div class="row container-fluid">
+    <div class="col-md-12">
+        <div class="panel panel-info" style="border-color: #00b3ee">
+            <div class="panel-heading">
+                <div class="panel-title">
+                    <h4>Seat Allocation Application Details 263510799682, Ref.
+                        No. 16969/SSC/8/3/1/CSAS</h4>
+                </div>
+            </div>
+            <div class="panel-body">
+                <table class="table table-bordered table-responsive">
+                    <tr>
+                        <td style="background-color: lightgrey; font-weight: bold;">Name</td>
+                        <td>ARPIT SHARMA</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: lightgrey; font-weight: bold;">Form Number</td>
+                        <td>263510799682</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: lightgrey; font-weight: bold;">Reference Number</td>
+                        <td>16969/SSC/8/3/1/CSAS</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: lightgrey; font-weight: bold;">Program</td>
+                        <td>B.Sc. (Hons.) Physics</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: lightgrey; font-weight: bold;">College</td>
+                        <td>St. Stephen College</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: lightgrey; font-weight: bold;">Score</td>
+                        <td>                                 101 : English : 168.2588057<br>324 : Psychology : 239.2483125<br>323 : Political Science : 228.4351891<br>313 : Geography/Geology : 209.3998647<br><strong>Total Score : 845.3421720</strong><br>                                </p>
+                            </td>
+                    </tr>
+
+                    <tr>
+                        <td style="background-color: lightgrey; font-weight: bold;">Allocation</td>
+                        <td>CSAS Mid-Entry Round</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: lightgrey; font-weight: bold;">Seat Category</td>
+                        <td>General</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: lightgrey; font-weight: bold;"> Gender</td>
+                        <td> Male</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: lightgrey; font-weight: bold;">Applicant Category</td>
+                        <td>General</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: lightgrey; font-weight: bold;">Kashmiri Migrant</td>
+                        <td> Not Applicable</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: lightgrey; font-weight: bold;">Pwd Category</td>
+                        <td> Not Applicable</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: lightgrey; font-weight: bold;">Minority</td>
+                        <td> Not Applicable</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: lightgrey; font-weight: bold;"> Email</td>
+                        <td> sharmaarpit59485@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: lightgrey; font-weight: bold;"> Mobile</td>
+                        <td> 8528528583</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: lightgrey; font-weight: bold;"> Choice</td>
+                        <td> 2</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: lightgrey; font-weight: bold;"> Board Roll No./ Board Passing Year
+                        </td>
+                        <td> 23655014 / 2023</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: lightgrey; font-weight: bold;"> Board</td>
+                        <td>  CENTRAL BOARD OF SECONDARY EDUCATION(CBSE) </td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: lightgrey; font-weight: bold;">Allocation Date</td>
+                        <td>2026-08-08<br>
+                            Seat Allocation Accepted
+                            :No<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: lightgrey; font-weight: bold;"> College Remarks</td>
+                        <td> <br>
+
+</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: lightgrey; font-weight: bold;">Application Status</td>
+                        <td>
+                                                            Payment Pending                                                        </td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: lightgrey; font-weight: bold;">Queries raised by college</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">&copy;<a href="http://www.du.ac.in/" target="_blank"> University of
+                    Delhi 2026</a>
+            </div>
+            <div class="col-md-6 control-label"><span class=" pull-right no-print"><a href="https://samarth.edu.in/"
+                                                                                      class="print">Powered By: Samarth</a></span>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery.js"></script>
+<script src="js/yii.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/ji_form.js"></script></body>
+</html>
